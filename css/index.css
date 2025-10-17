@@ -1,0 +1,625 @@
+/* ========================================== general style ==========================================  */
+
+body {
+  margin: 0;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  /* border: #e1306c solid 1px; */
+}
+*::selection {
+    background-color: #7b61ff;
+    color: white;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+      color: (51,54,70);
+}
+.continer{
+    width: 75%;
+    margin: auto;
+    /* background-color: rgb(205, 150, 150); */
+}
+.bad{
+    color: red;
+}
+.clear{
+    clear: both;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+div img {
+    width: 100%;
+}
+.badge{
+  background: #7b61ff;     
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.buttoms{
+    background-color: #7b61ff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border:  none;
+        font-size: 17px;
+}
+
+div.title-section-2 h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* ======================================== NavBar ========================================  */
+
+.icon{
+    display: inline-block;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:rgb(142,81,255);
+    text-align: center;
+}
+.margin-top-sections{
+    margin-top: 10%;
+}
+.icon-title{
+    margin-top: 12px;
+    display: inline-block;
+}
+
+div.continer div.icon-title p{
+    transform: translateY(30%);  
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+}
+div.icon i{
+transform: translateY(50%);   
+padding: 0; 
+    
+}
+
+.navbar{
+    position: fixed; 
+    top: 0;
+    z-index: 999;
+    width: 100%;  
+    background-color:rgb(245,243,255) ;
+    color: black;
+    border-bottom: 1px solid rgb(142,81,255); ;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li{
+      display: inline-block;
+      margin-right: 15px;
+}
+div.links-navbar a{
+         text-decoration: none;
+         color: black;
+         position: relative;
+        padding-bottom: 5px;
+}
+div.links-navbar a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #7b61ff;
+  transition: width 0.3s ease; 
+}
+div.links-navbar a:hover::before {
+  width: 100%;
+}
+div.links-navbar a:active::before
+
+/* ================================================================================  */
+
+/* ======================================== section hero ========================================  */
+.hero-section{
+    padding-top: 40px;
+}
+.img-border{
+    border-radius: 30px;
+
+}
+.imge{
+     width:100%;
+     border-radius: 30px;
+     background-color: white;
+    border: 20px solid white;
+    box-shadow: 3px 3px #c4c3c3;
+}
+.img-box{
+    width:40%;
+    position: relative; 
+}
+.discount-badge{
+position: absolute;
+  top: 40px;
+  left: 40px;
+  background: #7b61ff;     
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.text-product-hero{
+    width: 50%;
+    margin-top: 50px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-block: 20px;
+}
+.div-hero{
+        margin-block: 15px;
+}
+
+.div-hero p{
+    text-decoration: line-through;
+        font-weight: 600;
+        margin-inline: 10px;
+        margin-top: 3px;
+
+}
+.deger{
+background-color: rgb(255,226,226);
+color: red;
+padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+border-radius:20px;
+margin-top: 3px;
+}
+button i.fa-cart-shopping{
+    color:#ffffff;
+}
+button i.fa-heart{
+    color:#000000;
+}
+
+div.hero-button button{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    background-color: #7b61ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+      transition :transform 0.7s 0s;
+}
+div.hero-button button.button2{
+     background-color: #ffffff;
+    color:#000000;
+    border: 2px rgb(209,213,220) solid;
+}
+div.hero-button button:hover{
+transform: scale(1.07);
+}
+.color-move{
+    color: #7b61ff;
+}
+.margin-inline-badge{margin-inline:10px;}
+
+.parent{
+    position: relative;
+    overflow: hidden;
+
+}
+.child{
+    position: absolute;
+    background-color: rgba(123, 97, 255, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border-radius: 30px;
+    transition: opacity 1s ;
+}
+.child h3{
+    transform: translateX(100%);
+
+}
+
+div.parent:hover .child{
+opacity: 1; 
+}
+div.parent:hover h3{
+    transform: translateX(0);
+         transition: transform 0.6s 0.6s ;
+
+}
+/* ============================================ section 2 ========================================  */
+.Compare-section{
+     padding-top: 40px;
+    background-color:rgb(247,245,255) ;
+    width: 100%;
+    padding-bottom: 100px;
+
+}
+.title-section-2{
+    text-align: center;
+    padding-block:5% ;
+}
+
+.secound-head-table{
+    color: rgb(106,114,130);
+    font-size: 13px;
+}
+.table-div{
+    background-color: white;
+    border-radius: 30px;
+    padding-inline: 40px;
+    padding-block: 30px;
+    border: 1px solid  rgb(106,114,130);
+
+}
+.move-background{
+background-color:rgb(245,243,255) ;
+}
+.border-top-left-right{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.border-bottom-left-right{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.table{
+    text-align: center;
+    width: 100%;
+     border-collapse: collapse; 
+}
+td,th{
+      padding: 23px;
+           border-bottom:2px solid rgb(218,222,227) ;
+}
+tr.without-border-bottom td{
+    border: 0;
+}
+
+.frist-td{
+    text-align:left;
+}
+
+.CUP{
+    background-color: rgb(255, 255, 255);
+    width: 370px;
+    height: 55px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: 1px solid  rgb(106,114,130);
+}
+div.CUP{
+    color:rgb(0,201,80);
+}
+
+div i.fa-video{
+    color:rgb(0,184,219) ;
+    margin-right: 5px;
+}
+i.fa-camera{
+    color:rgb(0,187,167) ;
+        margin-right: 5px;
+
+}
+i.fa-battery-full{
+    color:green ;
+        margin-right: 5px;
+
+}
+i.fa-route{
+    color:rgb(255,105,0) ;
+        margin-right: 5px;
+
+}
+i.fa-gauge-high{
+    color:red ;
+        margin-right: 5px;
+
+}
+i.fa-shield-halved{
+    color:rgb(0,184,219) ;
+        margin-right: 5px;
+
+}
+i.fa-weight-hanging{
+    color:rgb(97,95,255) ;
+        margin-right: 5px;
+
+}
+i.fa-cloud-sun-rain{
+    color:rgb(43,127,255);
+        margin-right: 5px;
+
+}
+i.fa-dollar-sign{
+    color:orange ;
+        margin-right: 5px;
+}
+
+/* ===================================  section 3 ============================= */
+.Customers-Say{
+    width: 100%;
+    padding-top: 40px;
+    position: relative;
+margin-bottom: 5%;
+margin-top: 0;
+}
+.left-fixed-rate{
+    width: 28%;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    border-radius: 30px;
+    position: sticky;
+    top: 50px;
+ border: 2px solid  rgb(229,231,235);
+}
+div.left-fixed-rate div img{
+    margin-block:20px;
+}
+div.left-fixed-rate h3{
+    font-size: 60px;
+    font-weight: 600;
+}
+div.left-fixed-rate h4{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.end-rating-left{
+    border-top:2px solid rgb(229,231,235);
+    padding-left: 25px;
+    padding-top: 15px;  
+}
+.right-rate{
+    width: 60%;
+    padding-block:30px ;
+    padding-inline: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin-bottom: 30px;
+    border:2px solid rgb(229,231,235);
+}
+.avatar-img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-top: 12px;
+    border-radius: 50%;
+    border:2px solid rgb(142,81,255); 
+}
+.bottom-avatar{
+    background-color: rgb(245,243,255);
+    color: rgb(142,81,255); 
+    border-radius: 30px;
+    padding: 5px 12px;
+    font-size: 15px;
+}
+.text-align-right{
+    text-align: right;
+}
+.margin-top{
+    margin-top: 20px;
+}
+.end-buttom-rate{
+    margin-left:60%;
+        border: #7b61ff solid 3px;
+
+}
+button.end-buttom-rate:hover{
+    color: #7b61ff;
+    background-color: white;
+}
+/*========================================= section 4 ============================================  */
+.Complete-Your-Setup{
+        padding-top: 40px;
+    background-color:rgb(247,245,255) ;
+    width: 100%;
+}
+.cards
+{
+    margin: auto;
+    width: 100%;
+}
+.card{
+    width: 20%;
+    background-color: white;
+    border:2px solid rgb(229,231,235);
+    padding: 15px;
+    border-radius: 30px;
+    padding-bottom: 30px;
+}
+.card:hover img{
+    transform: scale(1.05);
+}
+.product-imge{
+    border-radius: 20px;
+    margin-bottom: 15px;
+    transition: transform 0.6s ;
+}
+.margin-5{
+    margin-inline:3.2%;
+}
+.imge-position{
+    position: relative;
+}
+.discount-badge-product{
+position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgb(0,187,167);     
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight:lighter;
+}
+.badge-product2{
+     background: rgb(0,201,80);     
+}
+.badge-product3{
+     background: rgb(0,184,219);     
+}
+.badge-product4{
+     background: rgb(255,105,0);     
+}
+
+div.prodect-text h3.float-left{
+    font-size:25px;
+}
+div.prodect-text p{
+    font-weight: lighter;
+    font-size: 15px;
+    margin-bottom: 15px;
+      line-height: 25px;
+}
+.buttom-section4{
+    background-color: rgba(0,0,0,0);
+    color: rgb(142,81,255); 
+    border-radius: 30px;
+    border: 2px solid rgb(142,81,255) ;
+     margin-left: 40%;
+    padding: 10px 40px;
+    font-size: 15px;
+    margin-block: 50px;
+}
+button.buttom-section4:hover{
+    color: white;
+    background-color: #7b61ff;
+}
+
+/* =================================================================== */
+
+/* ================================ section 5 (end) ===============================*/
+
+.fouter {
+  margin-top: 0;
+  background-color: rgb(16, 24, 40);
+  color: black;
+  width: 100%;
+  height: 450px;
+  padding-top: 30px;
+  color: white;
+}
+.foter-text {
+  float: left;
+  width: 25%;
+  margin-right: 5%;
+
+}
+div.icon-title{
+    margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 12px;
+}
+.end-width {
+  width: 22%;
+}
+.float-left {
+  float: left;
+}
+.All-rights-reserved {
+  margin-top: 30px;
+  border-top: 2px rgb(74, 85, 101) solid;
+  padding-top: 30px;
+}
+.over-flow {
+  overflow: auto;
+}
+div.All-rights-reserved a{
+    background-color: aqua;
+    padding: auto;
+}
+.pyment{
+      background-color: rgb(255, 255, 255);
+      width: fit-content;
+      height: 22px;
+      border-radius: 10px;
+      display: inline-block;
+      padding: 9px;
+      text-align: center;
+     margin-left: 10px;
+}
+div.All-rights-reserved div img{
+    width:60px;
+}
+#master{
+    width: 30px;
+}
+
+  .social-icons {
+  
+      margin-top: 20px;
+    }
+   .div-icon
+   {
+    text-align: center;
+    margin-inline: 8px;
+    width: 30px;
+    height: 30px;
+    background-color:rgb(30,41,57);
+    border-radius: 8px;
+     transition: background-color 0.3s;
+   }
+
+ .social-icons div i{
+   margin-top: 5px;
+  padding: 0;
+ }
+    /* تأثير hover */
+     .social-icons div#facbook:hover  {
+      background-color: #1877f2;
+    }
+
+     .social-icons div#twitter:hover  {
+      background-color: #1da1f2;
+    }
+
+     .social-icons div#insta:hover  {
+      background-color: #e1306c;
+    }
+
+      .social-icons div#youtube:hover  {
+      background-color: #ff0000;
+    }
+/* =================================================================== */
